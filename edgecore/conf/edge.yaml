@@ -8,14 +8,14 @@ mqtt:
 
 edgehub:
     websocket:
-        url: wss://192.168.56.159:10000/e632aba927ea4ac2b575ec1603d56f10/edge-node/events
+        url: wss://MASTER_NODE:10000/e632aba927ea4ac2b575ec1603d56f10/edge-node/events
         certfile: /etc/kubeedge/certs/edge.crt
         keyfile: /etc/kubeedge/certs/edge.key
         handshake-timeout: 30 #second
         write-deadline: 15 # second
         read-deadline: 15 # second
     quic:
-        url: 192.168.56.159:10001
+        url: MASTER_NODE:10001
         cafile: /etc/kubeedge/ca/rootCA.crt
         certfile: /etc/kubeedge/certs/edge.crt
         keyfile: /etc/kubeedge/certs/edge.key

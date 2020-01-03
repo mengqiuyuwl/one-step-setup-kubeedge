@@ -1,0 +1,8 @@
+[Unit]
+Description=Kubeedge cloudcore
+Documentation=https://github.com/kubeedge/kubeedge.git
+
+[Service]
+ExecStart=/usr/local/cloudcore/cloudcore
+Restart=on-failure
+RestartSec=5

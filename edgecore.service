@@ -1,0 +1,8 @@
+[Unit]
+Description=Kubeedge edgecore
+Documentation=https://github.com/kubeedge/kubeedge.git
+
+[Service]
+ExecStart=/usr/local/edgecore/edgecore
+Restart=on-failure
+RestartSec=5
